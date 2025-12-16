@@ -34,4 +34,4 @@ If we change our data practices, we will update this policy and the App Store li
 
 ## Contact
 
-If you have any questions, contact: marius752 (GitHub) or via the repository issues: https://github.com/MariusCodeAcademy/sleep-cycle-mk1
+If you have any questions, contact: MariusCodeAcademy (GitHub) or via the repository issues: https://github.com/MariusCodeAcademy/sleep-cycle-mk1

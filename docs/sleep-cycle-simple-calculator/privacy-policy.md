@@ -10,9 +10,8 @@ Last updated: December 16, 2025
 
 ## Contact 📬
 
-- 🧑‍💻 MariusCodeAcademy (GitHub) or via the repository issues: https://github.com/MariusCodeAcademy/sleep-cycle-mk1
-- 🐦 X: https://x.com/MariusK83120813/status/2007860973256740944
-- 💼 LinkedIn: https://www.linkedin.com/in/marius-kuzminskas/
+- 🐦 X (post): [X post by @MariusK83120813](https://x.com/MariusK83120813/status/2007860973256740944)
+- 💼 LinkedIn: [Marius K](https://www.linkedin.com/in/marius-kuzminskas/)
 
 ## What Data We Collect 🔍
 

@@ -2,36 +2,42 @@
 
 Last updated: December 16, 2025
 
-Sleep Cycle Simple Calculator ("the App") helps users estimate optimal sleep and wake times based on typical 90-minute sleep cycles. The App does not collect, store, or share personal data.
+# Privacy Policy 🔒
 
-## What Data We Collect
+Last updated: December 16, 2025
 
-- We do not collect any personal information.
-- We do not track usage analytics.
-- We do not access your contacts, photos, microphone, camera, or location.
-- We do not access or read your health data.
+> ✅ Sleep Cycle Simple Calculator ("the App") helps users estimate optimal sleep and wake times based on typical 90‑minute sleep cycles. The App does not collect, store, or share personal data.
 
-## Health Data
+## Contact 📬
 
-- The App does not use HealthKit or CareKit.
-- The App does not request access to Apple Health data.
+- 🧑‍💻 MariusCodeAcademy (GitHub) or via the repository issues: https://github.com/MariusCodeAcademy/sleep-cycle-mk1
+- 🐦 X: https://x.com/MariusK83120813/status/2007860973256740944
+- 💼 LinkedIn: https://www.linkedin.com/in/marius-kuzminskas/
 
-## Device Permissions
+## What Data We Collect 🔍
 
-- The App does not request sensitive device permissions.
+- 🛑 We do not collect any personal information.
+- 🚫 We do not track usage analytics.
+- 📵 We do not access your contacts, photos, microphone, camera, or location.
+- 🛡️ We do not access or read your health data.
 
-## Data Sharing
+## Health Data 🩺
 
-- We do not share any data with third parties.
+- ❌ The App does not use HealthKit or CareKit.
+- ❌ The App does not request access to Apple Health data.
 
-## Children’s Privacy
+## Device Permissions 🔧
 
-- The App is suitable for general audiences and does not collect data from children.
+- 🔒 The App does not request sensitive device permissions.
 
-## Changes to This Policy
+## Data Sharing 🤝
+
+- 🔄 We do not share any data with third parties.
+
+## Children’s Privacy 👶
+
+- 🧒 The App is suitable for general audiences and does not collect data from children.
+
+## Changes to This Policy ✏️
 
 If we change our data practices, we will update this policy and the App Store listing.
-
-## Contact
-
-If you have any questions, contact: MariusCodeAcademy (GitHub) or via the repository issues: https://github.com/MariusCodeAcademy/sleep-cycle-mk1

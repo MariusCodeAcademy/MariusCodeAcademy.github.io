@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Easy Time Track</title>
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --bg-soft: #fffaf2;
+      --surface: rgba(255, 250, 242, 0.78);
+      --surface-strong: #fffdf8;
+      --text: #1f2933;
+      --muted: #5b6773;
+      --line: rgba(31, 41, 51, 0.12);
+      --accent: #c45b2b;
+      --accent-deep: #7f2f14;
+      --accent-soft: rgba(196, 91, 43, 0.12);
+      --shadow: 0 24px 70px rgba(71, 45, 30, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(196, 91, 43, 0.18), transparent 34%),
+        radial-gradient(circle at top right, rgba(29, 78, 137, 0.12), transparent 28%),
+        linear-gradient(180deg, #f2e8d8 0%, var(--bg) 38%, #efe7db 100%);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-deep);
+    }
+
+    .shell {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+      padding: 32px 0 72px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(135deg, rgba(255, 248, 239, 0.96), rgba(249, 239, 226, 0.88)),
+        var(--surface-strong);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196, 91, 43, 0.16), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-deep);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(2.4rem, 4.8vw, 4.8rem);
+      letter-spacing: -0.04em;
+      max-width: 12ch;
+    }
+
+    .hero p {
+      max-width: 64ch;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .meta-card {
+      padding: 16px 18px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.56);
+      border: 1px solid rgba(31, 41, 51, 0.08);
+    }
+
+    .meta-label {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .meta-value {
+      display: block;
+      margin-top: 6px;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+      gap: 24px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .toc,
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+    }
+
+    .toc {
+      position: sticky;
+      top: 20px;
+      padding: 22px;
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .toc ol {
+      margin: 18px 0 0;
+      padding-left: 20px;
+    }
+
+    .toc li + li {
+      margin-top: 10px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .content {
+      display: grid;
+      gap: 18px;
+    }
+
+    .panel {
+      padding: 28px;
+    }
+
+    .panel h2 {
+      font-size: clamp(1.45rem, 2vw, 1.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    .panel h3 {
+      margin-top: 18px;
+      font-size: 1.08rem;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+
+    .panel p,
+    .panel li {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .panel p + p,
+    .panel ul,
+    .panel ol {
+      margin-top: 14px;
+    }
+
+    .panel ul,
+    .panel ol {
+      padding-left: 22px;
+    }
+
+    .notice {
+      padding: 16px 18px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, rgba(196, 91, 43, 0.08), rgba(196, 91, 43, 0.02));
+      border: 1px solid rgba(196, 91, 43, 0.16);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding: 22px 24px;
+      border-radius: var(--radius-lg);
+      background: rgba(31, 41, 51, 0.92);
+      color: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--shadow);
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    @media (max-width: 880px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(calc(100% - 20px), var(--max-width));
+        padding-top: 20px;
+      }
+
+      .hero,
+      .panel,
+      .toc {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <span class="eyebrow">Easy Time Track</span>
+      <h1>Privacy Policy</h1>
+      <p>
+        This Privacy Policy explains how Easy Time Track collects, uses, and protects information when you use the app,
+        including its iPhone app, watch-related features, widget-related features, subscriptions, and analytics.
+      </p>
+      <div class="meta">
+        <div class="meta-card">
+          <span class="meta-label">Last Updated</span>
+          <span class="meta-value">15 March 2026</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">App</span>
+          <span class="meta-value">Easy Time Track</span>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label">Support</span>
+          <span class="meta-value"><a href="https://forms.gle/NtCawvDvkinHPLDV8">Contact via feedback form</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout" aria-label="Privacy policy content">
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#data-we-collect">Information We Collect</a></li>
+          <li><a href="#how-we-use">How We Use Information</a></li>
+          <li><a href="#analytics">Firebase Analytics</a></li>
+          <li><a href="#subscriptions">Subscriptions and Payments</a></li>
+          <li><a href="#sharing">How Information Is Shared</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#rights">Your Choices and Rights</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="content">
+        <section class="panel" id="overview">
+          <h2>Overview</h2>
+          <p>
+            Easy Time Track is a time-tracking app designed to help users log work sessions, manage projects, review reports,
+            and unlock premium features through auto-renewing subscriptions.
+          </p>
+          <p>
+            The app is designed so that your project and time-entry content is primarily stored on your device. Some limited technical
+            and usage information may also be collected to understand product usage, improve the app, and measure subscription-related behavior.
+          </p>
+          <div class="notice">
+            <strong>Short version:</strong> your tracked work data is mainly used to operate the app for you, while analytics data is used to understand app usage and improve the product.
+          </div>
+        </section>
+
+        <section class="panel" id="data-we-collect">
+          <h2>Information We Collect</h2>
+          <h3>Information you create in the app</h3>
+          <ul>
+            <li>Project names, icons, colors, billing flags, and optional auto-stop settings.</li>
+            <li>Time-entry information such as start time, end time, billable status, and optional notes.</li>
+            <li>App preferences, such as watch auto-sync and widget refresh settings.</li>
+          </ul>
+
+          <h3>Subscription information</h3>
+          <ul>
+            <li>Whether you have free or Pro access.</li>
+            <li>The active subscription plan and expiration or renewal-related status made available through Apple StoreKit.</li>
+            <li>Purchase, restore, and entitlement status events needed to manage premium access.</li>
+          </ul>
+
+          <h3>Usage and device information</h3>
+          <ul>
+            <li>App screen views and feature interactions, such as opening reports, viewing the paywall, starting or stopping a timer, creating projects, or restoring purchases.</li>
+            <li>Technical information used for analytics and app performance, which may include device type, operating system, app version, coarse region, app instance identifiers, and similar diagnostic or usage metadata.</li>
+            <li>Deep-link usage if you trigger app actions through supported app URLs.</li>
+          </ul>
+
+          <h3>Information we do not ask you to create</h3>
+          <p>
+            The app does not require you to create a direct account with us to use its core features.
+          </p>
+        </section>
+
+        <section class="panel" id="how-we-use">
+          <h2>How We Use Information</h2>
+          <p>We use information for the following purposes:</p>
+          <ul>
+            <li>To provide the core time-tracking, reporting, widget, and watch-related features of the app.</li>
+            <li>To determine whether free or Pro features should be available on your device.</li>
+            <li>To understand which parts of the app are used most often and where users encounter friction.</li>
+            <li>To measure subscription funnel events, such as paywall views, plan selection, purchase starts, completed purchases, cancelled purchases, and restore flows.</li>
+            <li>To improve the app's usability, reliability, and feature planning.</li>
+            <li>To respond to support or feedback requests you choose to submit.</li>
+          </ul>
+        </section>
+
+        <section class="panel" id="analytics">
+          <h2>Firebase Analytics</h2>
+          <p>
+            Easy Time Track uses Firebase Analytics, a service provided by Google, to understand product usage and improve the app.
+            Firebase Analytics may collect information such as app interactions, approximate location derived from IP address,
+            device and app identifiers, device model, operating system, app version, and engagement events.
+          </p>
+          <p>
+            In Easy Time Track, analytics events may include actions such as app launch, tab changes, timer starts and stops,
+            manual entry creation, project creation or deletion, report navigation, paywall views, subscription events, and settings changes.
+          </p>
+          <p>
+            We use this information to analyze behavior trends, understand feature usage, and improve conversion and retention. We do not use Firebase Analytics data to serve third-party ads inside the app.
+          </p>
+          <p>
+            For more information about how Google handles Firebase data, please review Google's materials at
+            <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and
+            <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.
+          </p>
+        </section>
+
+        <section class="panel" id="subscriptions">
+          <h2>Subscriptions and Payments</h2>
+          <p>
+            Pro subscriptions are processed by Apple through the App Store. We do not receive your full payment card details.
+            Apple may provide us with subscription status information necessary to confirm purchases, restores, renewals, cancellations,
+            refunds, and entitlement changes.
+          </p>
+          <p>
+            Subscription management, billing terms, and payment handling are also subject to Apple's own terms, privacy practices, and App Store policies.
+          </p>
+        </section>
+
+        <section class="panel" id="sharing">
+          <h2>How Information Is Shared</h2>
+          <h3>Within your Apple device environment</h3>
+          <p>
+            The app may share limited app data locally between the main app, widget, and watch-related features using Apple's app-group and platform mechanisms so those features remain in sync on your devices.
+          </p>
+
+          <h3>With service providers</h3>
+          <p>
+            We may share limited technical and usage data with service providers that help us operate the app, such as Firebase Analytics.
+          </p>
+
+          <h3>For legal or security reasons</h3>
+          <p>
+            We may disclose information if required by law, legal process, or to protect rights, safety, security, or the integrity of the app.
+          </p>
+
+          <h3>No sale of personal information</h3>
+          <p>
+            We do not sell your personal information.
+          </p>
+        </section>
+
+        <section class="panel" id="retention">
+          <h2>Data Retention</h2>
+          <p>
+            Your project and time-tracking content generally remains on your device until you edit or delete it, or remove the app and its local data.
+          </p>
+          <p>
+            Analytics and subscription-related technical data may be retained for as long as reasonably necessary for product analysis,
+            fraud prevention, legal compliance, or operational records, subject to the retention settings and policies of our service providers.
+          </p>
+        </section>
+
+        <section class="panel" id="rights">
+          <h2>Your Choices and Rights</h2>
+          <p>Depending on your location, you may have rights under applicable privacy laws, including rights to request access, correction, deletion, or information about how your data is used.</p>
+          <ul>
+            <li>You can delete projects and time entries from within the app.</li>
+            <li>You can manage subscriptions through your Apple App Store account settings.</li>
+            <li>You can contact us using the support link below for privacy-related questions or requests.</li>
+          </ul>
+          <p>
+            If you submit a privacy request, we may need information sufficient to verify and process that request where required by law.
+          </p>
+        </section>
+
+        <section class="panel" id="children">
+          <h2>Children's Privacy</h2>
+          <p>
+            Easy Time Track is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
+            If you believe a child has provided personal information through the app, please contact us so we can review the situation.
+          </p>
+        </section>
+
+        <section class="panel" id="changes">
+          <h2>Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. If we make material changes, we may update the date at the top of this page and,
+            where appropriate, provide additional notice inside the app or through the App Store listing.
+          </p>
+        </section>
+
+        <section class="panel" id="contact">
+          <h2>Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy or want to make a privacy-related request, you can contact us here:
+          </p>
+          <p>
+            <a href="https://forms.gle/NtCawvDvkinHPLDV8">https://forms.gle/NtCawvDvkinHPLDV8</a>
+          </p>
+          <p>
+            If you prefer, you can replace this contact section with your support email address before publishing the page.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        This template is tailored to the current Easy Time Track app structure, including local time-tracking data, App Store subscriptions,
+        widget and watch feature sharing, and Firebase Analytics. Review it before publishing to ensure it matches your final production behavior and legal requirements.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
